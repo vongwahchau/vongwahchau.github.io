@@ -20,6 +20,7 @@
         const index = retry[name]
         if (index >= domains.length) return
         const newDomain = domains[index]
+        url.host = newDomain
         document.write(`<script src="${url}"><\/script>`)
         // const script = document.createElement('script')
         // url.host = newDomain
